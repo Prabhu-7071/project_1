@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be Mine Forever? 💍 - Ladli</title>
+    <link rel="stylesheet" href="css/enhanced-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="proposal-page">
+    <!-- Background Effects -->
+    <div class="background-particles">
+        <div class="floating-hearts"></div>
+        <div class="fireflies"></div>
+        <div class="rose-petals"></div>
+        <div class="aurora-effect"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-brand">Ladli's Special Moment ✨</div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Back to Portfolio</a>
+        </div>
+    </nav>
+
+    <!-- Proposal Section -->
+    <section class="proposal-section">
+        <div class="proposal-content">
+            <div class="hero-glass-card">
+                <h1 class="proposal-title">
+                    Ladli, Will You Be Mine Forever?
+                </h1>
+
+                <div class="proposal-heart-container">
+                    <button id="proposal-heart" class="proposal-heart-btn microinteraction">
+                        <div class="heart-shape">💖</div>
+                        <div class="heart-glow"></div>
+                        <div class="heart-ring">💍</div>
+                    </button>
+                </div>
+
+                <p class="proposal-subtitle">
+                    Click the heart to answer with your beautiful soul ✨
+                </p>
+
+                <div class="proposal-message-preview">
+                    <p>"Every day with you is a new adventure. You make my world brighter, my heart fuller, and my life complete. I want to spend forever creating beautiful memories with you."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proposal Response Modal -->
+    <div id="proposal-modal" class="modal proposal-modal">
+        <div class="modal-content proposal-response">
+            <div class="confetti-explosion"></div>
+            <h3 id="proposal-message" class="proposal-message"></h3>
+            <div class="celebration-hearts">
+                <div class="celebration-heart">💖</div>
+                <div class="celebration-heart">💕</div>
+                <div class="celebration-heart">💘</div>
+                <div class="celebration-heart">💝</div>
+                <div class="celebration-heart">💍</div>
+                <div class="celebration-heart">🎉</div>
+            </div>
+            <div class="proposal-actions">
+                <button class="btn-modern btn-primary continue-celebration">Continue Celebrating 🎉</button>
+                <button class="btn-modern btn-secondary share-moment">Share This Moment 💫</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enhanced Audio Player -->
+    <div class="audio-player">
+        <audio id="background-music" loop>
+            <source src="audio/romantic.mp3" type="audio/mpeg">
+        </audio>
+        <button id="music-toggle" class="music-btn microinteraction">
+            <span class="music-icon">🎵</span>
+            <span class="music-text">Play Music</span>
+        </button>
+    </div>
+
+    <script src="js/enhanced-script.js"></script>
+    <script>
+        // Proposal-specific enhancements
+        document.addEventListener('DOMContentLoaded', function() {
+            const proposalHeart = document.getElementById('proposal-heart');
+            const proposalModal = document.getElementById('proposal-modal');
+            const proposalMessage = document.getElementById('proposal-message');
+            const continueCelebration = document.querySelector('.continue-celebration');
+            const shareMoment = document.querySelector('.share-moment');
+
+            const proposalMessages = [
+                "She Said YES! 💍✨ Forever Begins Now!",
+                "My Ladli Said Yes! I'm the Luckiest Person Alive! 🥹💖",
+                "YES! Our Love Story Gets Its Perfect Chapter! 📖💕",
+                "Together Always, No Matter What! You Complete Me! 💞🌟"
+            ];
+
+            if (proposalHeart) {
+                proposalHeart.addEventListener('click', () => {
+                    // Create massive celebration
+                    createMegaCelebration();
+
+                    // Show random heartfelt message
+                    const randomMessage = proposalMessages[Math.floor(Math.random() * proposalMessages.length)];
+                    if (proposalMessage) {
+                        proposalMessage.textContent = randomMessage;
+                    }
+
+                    // Show modal with delay for effect
+                    setTimeout(() => {
+                        if (proposalModal) {
+                            proposalModal.style.display = 'flex';
+                            proposalModal.style.animation = 'modalAppear 0.8s ease forwards';
+                        }
+                    }, 1000);
+                });
+            }
+
+            if (continueCelebration && proposalModal) {
+                continueCelebration.addEventListener('click', () => {
+                    proposalModal.style.animation = 'modalDisappear 0.5s ease forwards';
+                    setTimeout(() => {
+                        proposalModal.style.display = 'none';
+                    }, 500);
+                });
+            }
+
+            if (shareMoment) {
+                shareMoment.addEventListener('click', async () => {
+                    const shareData = {
+                        title: 'She Said YES! 💍',
+                        text: 'The most beautiful moment of my life! Ladli agreed to be mine forever! 💖',
+                        url: window.location.href
+                    };
+
+                    try {
+                        if (navigator.share) {
+                            await navigator.share(shareData);
+                        } else {
+                            await navigator.clipboard.writeText(`${shareData.title} ${shareData.text} ${shareData.url}`);
+                            showNotification('Moment copied to share! 💕');
+                        }
+                    } catch (error) {
+                        console.log('Sharing failed:', error);
+                    }
+                });
+            }
+
+            function createMegaCelebration() {
+                const celebrationElements = ['🎉', '🎊', '✨', '⭐', '💫', '🎈', '🎁', '💖', '💕', '💍', '👑', '🌟'];
+
+                // Create 150 celebration elements
+                for (let i = 0; i < 150; i++) {
+                    setTimeout(() => {
+                        const element = document.createElement('div');
+                        element.innerHTML = celebrationElements[Math.floor(Math.random() * celebrationElements.length)];
+                        element.style.position = 'fixed';
+                        element.style.left = Math.random() * window.innerWidth + 'px';
+                        element.style.top = '-50px';
+                        element.style.fontSize = (Math.random() * 2 + 1.5) + 'rem';
+                        element.style.pointerEvents = 'none';
+                        element.style.zIndex = '9999';
+
+                        const duration = Math.random() * 3 + 3;
+                        const rotation = Math.random() * 1440 + 720;
+                        const sway = Math.random() * 300 - 150;
+
+                        element.style.animation = `megaCelebrationFall ${duration}s ease-in forwards`;
+                        element.style.setProperty('--rotation', rotation + 'deg');
+                        element.style.setProperty('--sway', sway + 'px');
+
+                        document.body.appendChild(element);
+
+                        setTimeout(() => {
+                            if (element.parentNode) {
+                                element.parentNode.removeChild(element);
+                            }
+                        }, duration * 1000);
+                    }, i * 30);
+                }
+
+                // Add celebration animation styles
+                if (!document.getElementById('mega-celebration-style')) {
+                    const style = document.createElement('style');
+                    style.id = 'mega-celebration-style';
+                    style.textContent = `
+                        @keyframes megaCelebrationFall {
+                            0% {
+                                opacity: 1;
+                                transform: translateY(-50px) translateX(0) rotate(0deg) scale(0);
+                            }
+                            10% {
+                                opacity: 1;
+                                transform: translateY(0) translateX(0) rotate(36deg) scale(1);
+                            }
+                            50% {
+                                opacity: 1;
+                                transform: translateY(50vh) translateX(var(--sway)) rotate(calc(var(--rotation) * 0.5)) scale(1.2);
+                            }
+                            100% {
+                                opacity: 0;
+                                transform: translateY(100vh) translateX(calc(var(--sway) * 1.5)) rotate(var(--rotation)) scale(0.5);
+                            }
+                        }
+
+                        @keyframes modalAppear {
+                            0% {
+                                opacity: 0;
+                                transform: scale(0.5) rotateY(-90deg);
+                            }
+                            100% {
+                                opacity: 1;
+                                transform: scale(1) rotateY(0deg);
+                            }
+                        }
+
+                        @keyframes modalDisappear {
+                            0% {
+                                opacity: 1;
+                                transform: scale(1) rotateY(0deg);
+                            }
+                            100% {
+                                opacity: 0;
+                                transform: scale(0.8) rotateY(90deg);
+                            }
+                        }
+
+                        .proposal-heart-btn {
+                            position: relative;
+                            background: none;
+                            border: none;
+                            font-size: 6rem;
+                            cursor: pointer;
+                            transition: all 0.3s ease;
+                        }
+
+                        .proposal-heart-btn:hover {
+                            transform: scale(1.1);
+                        }
+
+                        .heart-ring {
+                            position: absolute;
+                            top: -20px;
+                            right: -10px;
+                            font-size: 2rem;
+                            animation: ringFloat 2s ease-in-out infinite;
+                        }
+
+                        @keyframes ringFloat {
+                            0%, 100% { transform: translateY(0px) rotate(0deg); }
+                            50% { transform: translateY(-10px) rotate(15deg); }
+                        }
+
+                        .proposal-modal {
+                            display: none;
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: rgba(0, 0, 0, 0.9);
+                            justify-content: center;
+                            align-items: center;
+                            z-index: 10000;
+                        }
+
+                        .proposal-response {
+                            background: linear-gradient(135deg, rgba(255, 107, 157, 0.95), rgba(132, 94, 194, 0.95));
+                            backdrop-filter: blur(20px);
+                            border-radius: 30px;
+                            padding: 50px;
+                            text-align: center;
+                            max-width: 600px;
+                            margin: 20px;
+                            color: white;
+                        }
+
+                        .proposal-message {
+                            font-family: 'Dancing Script', cursive;
+                            font-size: 2.5rem;
+                            font-weight: 700;
+                            margin-bottom: 30px;
+                            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+                        }
+
+                        .celebration-hearts {
+                            display: flex;
+                            justify-content: center;
+                            gap: 15px;
+                            margin: 30px 0;
+                            flex-wrap: wrap;
+                        }
+
+                        .celebration-heart {
+                            font-size: 2.5rem;
+                            animation: celebrationPulse 1.5s ease-in-out infinite;
+                        }
+
+                        .celebration-heart:nth-child(1) { animation-delay: 0s; }
+                        .celebration-heart:nth-child(2) { animation-delay: 0.2s; }
+                        .celebration-heart:nth-child(3) { animation-delay: 0.4s; }
+                        .celebration-heart:nth-child(4) { animation-delay: 0.6s; }
+                        .celebration-heart:nth-child(5) { animation-delay: 0.8s; }
+                        .celebration-heart:nth-child(6) { animation-delay: 1s; }
+
+                        @keyframes celebrationPulse {
+                            0%, 100% { transform: scale(1) rotate(0deg); }
+                            50% { transform: scale(1.3) rotate(10deg); }
+                        }
+
+                        .proposal-actions {
+                            display: flex;
+                            gap: 20px;
+                            justify-content: center;
+                            margin-top: 30px;
+                            flex-wrap: wrap;
+                        }
+
+                        .proposal-message-preview {
+                            margin-top: 30px;
+                            padding: 25px;
+                            background: rgba(255, 255, 255, 0.1);
+                            border-radius: 20px;
+                            backdrop-filter: blur(10px);
+                            font-style: italic;
+                            line-height: 1.6;
+                        }
+
+                        @media (max-width: 768px) {
+                            .proposal-response {
+                                padding: 30px 20px;
+                                margin: 10px;
+                            }
+
+                            .proposal-message {
+                                font-size: 2rem;
+                            }
+
+                            .celebration-hearts {
+                                gap: 10px;
+                            }
+
+                            .celebration-heart {
+                                font-size: 2rem;
+                            }
+
+                            .proposal-actions {
+                                flex-direction: column;
+                                align-items: center;
+                            }
+                        }
+                    `;
+                    document.head.appendChild(style);
+                }
+            }
+
+            function showNotification(message) {
+                const notification = document.createElement('div');
+                notification.textContent = message;
+                notification.style.cssText = `
+                    position: fixed;
+                    top: 20px;
+                    right: 20px;
+                    background: linear-gradient(45deg, #ff6b9d, #845ec2);
+                    color: white;
+                    padding: 15px 20px;
+                    border-radius: 25px;
+                    font-weight: 600;
+                    z-index: 10000;
+                    animation: slideInRight 0.3s ease;
+                `;
+
+                document.body.appendChild(notification);
+
+                setTimeout(() => {
+                    if (notification.parentNode) {
+                        notification.remove();
+                    }
+                }, 3000);
+            }
+        });
+    </script>
+</body>
+</html>

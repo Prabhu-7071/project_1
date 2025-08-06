@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Ladli 💖</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="floating-hearts" id="floating-hearts"></div>
+    
+    <!-- Dark Mode Toggle -->
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <span class="sun-icon">☀️</span>
+        <span class="moon-icon">🌙</span>
+    </button>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-card glassmorphism">
+                <div class="profile-image">
+                    <div class="profile-placeholder">
+                        <span class="profile-emoji">👸</span>
+                    </div>
+                    <div class="glow-effect"></div>
+                </div>
+                <h1 class="hero-title">Happy Birthday <span class="highlight">Ladli</span> 💖</h1>
+                <p class="hero-subtitle">To the most beautiful soul who fills my world with love and joy</p>
+                
+                <!-- Statistics -->
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <span class="stat-icon">💕</span>
+                        <span class="stat-number" data-target="1806">0</span>
+                        <span class="stat-label">Days of Love</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-icon">😊</span>
+                        <span class="stat-number" data-target="100000">0</span>
+                        <span class="stat-label">Smiles Shared</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-icon">♾️</span>
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Forever Moments</span>
+                    </div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="cta-buttons">
+                    <button class="btn btn--primary" onclick="scrollToSection('love-letters')">Read Love Letters</button>
+                    <button class="btn btn--outline" onclick="scrollToSection('proposal')">Special Surprise</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Love Letters Section -->
+    <section class="love-letters" id="love-letters">
+        <div class="container">
+            <h2 class="section-title">Love Letters For You 💌</h2>
+            <div class="letters-container">
+                <div class="letter-slider">
+                    <div class="letter-content glassmorphism active" data-letter="0">
+                        <div class="letter-envelope">
+                            <div class="envelope-top"></div>
+                            <div class="envelope-body">
+                                <div class="letter-header">
+                                    <h3>Birthday Letter</h3>
+                                    <span class="letter-date">Your Special Day</span>
+                                    <span class="letter-recipient">My Dearest Shalu</span>
+                                </div>
+                                <div class="letter-text" id="letter-text-0">
+                                    <p>My Beautiful Ladli,</p>
+                                    <p>Today marks another year of your incredible existence, and I can't help but feel overwhelmed with gratitude for having you in my life. You are not just my girlfriend; you are my best friend, my confidante, and my greatest blessing.</p>
+                                    <p>Your smile lights up even my darkest days, and your laughter is the sweetest melody I've ever heard. Every moment with you feels like a dream I never want to wake up from.</p>
+                                    <p>On this special day, I want you to know that you deserve everything beautiful this world has to offer. You are kind, intelligent, funny, and absolutely stunning inside and out.</p>
+                                    <p>Happy Birthday, my love! May this new year of your life be filled with endless joy, adventure, and all your heart's desires.</p>
+                                    <p class="signature">Forever yours,<br>With all my love 💕</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="letter-content glassmorphism" data-letter="1">
+                        <div class="letter-envelope">
+                            <div class="envelope-top"></div>
+                            <div class="envelope-body">
+                                <div class="letter-header">
+                                    <h3>First Meeting</h3>
+                                    <span class="letter-date">Memory Lane</span>
+                                    <span class="letter-recipient">My Sweet Ladli</span>
+                                </div>
+                                <div class="letter-text" id="letter-text-1">
+                                    <p>My Sweet Ladli,</p>
+                                    <p>Do you remember the first time we met? I still get butterflies thinking about that magical moment. Time seemed to stop when our eyes first met, and I knew something special was about to begin.</p>
+                                    <p>You were wearing that beautiful smile that instantly captured my heart. Your eyes sparkled with such warmth and kindness that I couldn't help but be drawn to you like a moth to a flame.</p>
+                                    <p>From that very first conversation, I knew you were different. You weren't just another person in my life; you were the missing piece I didn't even know I was looking for.</p>
+                                    <p>Every day since then has been an adventure, and I fall in love with you a little more each time I see you smile.</p>
+                                    <p class="signature">Always remembering,<br>Your devoted admirer 💖</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="letter-content glassmorphism" data-letter="2">
+                        <div class="letter-envelope">
+                            <div class="envelope-top"></div>
+                            <div class="envelope-body">
+                                <div class="letter-header">
+                                    <h3>Future Dreams</h3>
+                                    <span class="letter-date">Dreams & Wishes</span>
+                                    <span class="letter-recipient">My Future, My Ladli</span>
+                                </div>
+                                <div class="letter-text" id="letter-text-2">
+                                    <p>My Darling Shalu,</p>
+                                    <p>When I close my eyes and imagine our future together, my heart fills with such joy and excitement. I see us traveling the world, exploring new places, and creating countless beautiful memories.</p>
+                                    <p>I dream of lazy Sunday mornings with you, watching sunrises together, and building a life filled with love, laughter, and endless adventures. I want to be there for every milestone, every celebration, and every quiet moment in between.</p>
+                                    <p>You make me want to be the best version of myself. With you by my side, I feel like I can conquer the world and make all our dreams come true.</p>
+                                    <p>I promise to love you through every season of life, to support your dreams, and to never stop showing you how much you mean to me.</p>
+                                    <p class="signature">Dreaming of forever,<br>Your loving partner 💕</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="letter-content glassmorphism" data-letter="3">
+                        <div class="letter-envelope">
+                            <div class="envelope-top"></div>
+                            <div class="envelope-body">
+                                <div class="letter-header">
+                                    <h3>Gratitude</h3>
+                                    <span class="letter-date">With Deep Gratitude</span>
+                                    <span class="letter-recipient">My Blessing, Shalu</span>
+                                </div>
+                                <div class="letter-text" id="letter-text-3">
+                                    <p>My Amazing Ladli,</p>
+                                    <p>Today I want to thank you for all the ways you've changed my life for the better. Before you, I didn't know what it meant to love someone so completely and to be loved so unconditionally in return.</p>
+                                    <p>Thank you for your patience when I'm being difficult, your understanding when I'm stressed, and your endless support in everything I do. You believe in me even when I don't believe in myself.</p>
+                                    <p>Thank you for bringing so much joy and color into my world. Life with you is an incredible adventure, and I'm grateful for every single day we get to spend together.</p>
+                                    <p>You are my greatest gift, my deepest love, and my most cherished treasure. I promise to never take your love for granted.</p>
+                                    <p class="signature">With endless gratitude,<br>Your thankful heart 💖</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <div class="letter-navigation">
+                    <div class="nav-dots">
+                        <button class="nav-dot active" data-letter="0" aria-label="Birthday Letter">Birthday</button>
+                        <button class="nav-dot" data-letter="1" aria-label="First Meeting Letter">First Meeting</button>
+                        <button class="nav-dot" data-letter="2" aria-label="Future Dreams Letter">Dreams</button>
+                        <button class="nav-dot" data-letter="3" aria-label="Gratitude Letter">Gratitude</button>
+                    </div>
+                    <div class="letter-controls">
+                        <button class="btn btn--sm" id="start-typing">Start Typing</button>
+                        <button class="btn btn--sm" id="read-aloud">Read Aloud</button>
+                        <button class="btn btn--sm" onclick="window.print()">Print</button>
+                        <button class="btn btn--sm" id="share-letter">Share</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Our Beautiful Memories 📸</h2>
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All Memories</button>
+                <button class="filter-btn" data-filter="dates">Dates</button>
+                <button class="filter-btn" data-filter="adventures">Adventures</button>
+                <button class="filter-btn" data-filter="portraits">Portraits</button>
+                <button class="filter-btn" data-filter="cozy">Cozy Moments</button>
+                <button class="filter-btn" data-filter="celebrations">Celebrations</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item glassmorphism" data-category="dates">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">📅</div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>First Meet Magic</h3>
+                        <p>The day everything began</p>
+                        <span class="gallery-date">3 July 2021</span>
+                    </div>
+                </div>
+                <div class="gallery-item glassmorphism" data-category="adventures">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">🌅</div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Sunset Dreams in Park</h3>
+                        <p>Perfect moments together</p>
+                        <span class="gallery-date">16 sept 2023</span>
+                    </div>
+                </div>
+                <div class="gallery-item glassmorphism" data-category="portraits">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">😊</div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Your Beautiful Smile</h3>
+                        <p>My favorite sight</p>
+                        <span class="gallery-date">15 July 2023</span>
+                    </div>
+                </div>
+                <div class="gallery-item glassmorphism" data-category="adventures">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">🏔️</div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Adventure Time</h3>
+                        <p>"Together on a train, hearts side by side, journeying through life — just you and me."💖</p>
+                        <span class="gallery-date">6 Nov 2023</span>
+                    </div>
+                </div>
+                <div class="gallery-item glassmorphism" data-category="cozy">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">🏠</div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>First Movie With You ❤️</h3>
+                        <p>"Our first movie together — Jawan — but the real hero was the moment I held your hand." 🎬❤️</p>
+                        <span class="gallery-date">18 Sept 2023</span>
+                    </div>
+                </div>
+                <div class="gallery-item glassmorphism" data-category="celebrations">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">🎉</div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Celebration Mode</h3>
+                        <p>Every day with you</p>
+                        <span class="gallery-date">"From the day I met you to today — every moment has been a beautiful chapter of us." 💖📖</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills/About Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Why I Love Ladli ✨</h2>
+            <div class="skills-grid">
+                <div class="skill-card glassmorphism">
+                    <div class="skill-icon">😊</div>
+                    <h3>Radiant Smile</h3>
+                    <p>Lights up every room</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="100"></div>
+                        <span class="progress-text">100%</span>
+                    </div>
+                </div>
+                <div class="skill-card glassmorphism">
+                    <div class="skill-icon">💖</div>
+                    <h3>Kind Heart</h3>
+                    <p>Compassion for everyone</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="100"></div>
+                        <span class="progress-text">100%</span>
+                    </div>
+                </div>
+                <div class="skill-card glassmorphism">
+                    <div class="skill-icon">🧠</div>
+                    <h3>Intelligence</h3>
+                    <p>Sharp and thoughtful</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="100"></div>
+                        <span class="progress-text">100%</span>
+                    </div>
+                </div>
+                <div class="skill-card glassmorphism">
+                    <div class="skill-icon">😂</div>
+                    <h3>Sense of Humor</h3>
+                    <p>Makes me laugh every day</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="100"></div>
+                        <span class="progress-text">100%</span>
+                    </div>
+                </div>
+                <div class="skill-card glassmorphism">
+                    <div class="skill-icon">✨</div>
+                    <h3>Inner Beauty</h3>
+                    <p>Shines from within</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="100"></div>
+                        <span class="progress-text">100%</span>
+                    </div>
+                </div>
+                <div class="skill-card glassmorphism">
+                    <div class="skill-icon">💪</div>
+                    <h3>Strength</h3>
+                    <p>Faces challenges with grace</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="100"></div>
+                        <span class="progress-text">100%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proposal Section -->
+    <section class="proposal" id="proposal">
+        <div class="container">
+            <div class="proposal-content glassmorphism">
+                <h2 class="proposal-title">A Special Question 💕</h2>
+                <p class="proposal-text">Shalu, you make every day feel like a celebration. Will you continue to be my partner in this beautiful journey of life?</p>
+                <div class="heart-container">
+                    <button class="heart-button" id="heart-button" aria-label="Click to accept">
+                        <span class="heart">💖</span>
+                        <span class="heart-text">Click Here</span>
+                    </button>
+                </div>
+                <div class="proposal-response hidden" id="proposal-response">
+                    <h3>You said YES! 🎉</h3>
+                    <p>Our love story continues to grow more beautiful every day!</p>
+                    <button class="btn btn--primary" id="share-moment">Share This Moment</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Confetti Container -->
+    <div class="confetti-container" id="confetti-container"></div>
+
+    <!-- Audio Controls -->
+    <div class="audio-controls">
+        <button class="audio-toggle" id="audio-toggle" aria-label="Toggle background music">
+            🎵
+        </button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+    "name": "Ladli's Perfect Portfolio",
+    "short_name": "Ladli Portfolio",
+    "description": "A beautiful romantic portfolio created with love",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ff6b9d",
+    "theme_color": "#845ec2",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "images/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "images/icon-512.png", 
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "categories": ["lifestyle", "social"],
+    "lang": "en",
+    "scope": "/",
+    "screenshots": [
+        {
+            "src": "images/screenshot1.png",
+            "sizes": "1280x720",
+            "type": "image/png"
+        }
+    ]
+}

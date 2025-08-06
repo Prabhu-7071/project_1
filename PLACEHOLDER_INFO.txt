@@ -1,0 +1,45 @@
+📸 IMAGE PLACEHOLDER GUIDE
+
+Replace these files with your actual photos:
+
+🖼️ REQUIRED IMAGES:
+
+1. ladli-profile.jpg (400x400px recommended)
+   → Beautiful profile photo of Ladli for the hero section
+
+2. photo1.jpg (800x600px recommended) 
+   → "First Date" - Photo from your first date together
+
+3. photo2.jpg (800x600px recommended)
+   → "Sunset Dreams" - Romantic sunset or scenic photo
+
+4. photo3.jpg (800x600px recommended)
+   → "Beautiful Smile" - Close-up photo of her smiling
+
+5. photo4.jpg (800x600px recommended)
+   → "Adventures" - Travel or adventure photo together
+
+6. photo5.jpg (800x600px recommended)
+   → "Cozy Moments" - Intimate, cozy photo at home
+
+7. photo6.jpg (800x600px recommended)
+   → "Celebrations" - Party, celebration, or special event photo
+
+8. video-poster.jpg (800x450px recommended)
+   → Thumbnail image for the birthday video
+
+💡 PHOTO TIPS:
+- Use high-quality images (at least 800px wide)
+- Keep file sizes under 2MB for faster loading
+- JPG format works best for photos
+- PNG for images with transparency
+- The website will automatically optimize for different screen sizes
+
+🎵 AUDIO FILES:
+- romantic.mp3 → Background music (keep under 10MB)
+
+🎥 VIDEO FILES:
+- happybirthday.mp4 → Birthday message video (MP4 format, under 50MB recommended)
+
+🚀 ONCE YOU REPLACE THESE:
+Your portfolio will come to life with your personal memories and become a truly magical experience for Ladli!

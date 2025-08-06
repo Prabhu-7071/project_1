@@ -1,0 +1,32 @@
+🎵 AUDIO SETUP GUIDE
+
+Add your romantic background music:
+
+📁 FILE: romantic.mp3
+📊 FORMAT: MP3 (recommended) or OGG
+📏 SIZE: Keep under 10MB for good performance
+⏱️ LENGTH: 3-5 minutes recommended (it will loop)
+
+💡 MUSIC SUGGESTIONS:
+- Your favorite romantic song together
+- Instrumental love songs
+- Classical romantic pieces
+- Nature sounds with soft music
+- Her favorite slow song
+
+🎼 POPULAR ROMANTIC TRACKS:
+- "Perfect" by Ed Sheeran (instrumental)
+- "All of Me" by John Legend (piano version)
+- "A Thousand Years" by Christina Perri (soft version)
+- Classical pieces like Canon in D
+- Soft jazz or acoustic guitar pieces
+
+⚙️ TECHNICAL NOTES:
+- The music will auto-loop when it ends
+- Users can control playback with the music button
+- Audio will fade in/out smoothly
+- Respects browser autoplay policies
+- Will pause when tab is not active
+
+🎯 FOR BEST RESULTS:
+Choose a song that has special meaning to both of you. The music will enhance the romantic atmosphere of the entire portfolio experience!
